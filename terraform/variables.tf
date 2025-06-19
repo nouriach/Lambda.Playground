@@ -4,12 +4,6 @@ variable "aws_profile" {
   default     = ""
 }
 
-variable "shared_credentials_file" {
-  description = "Profile file with credentials to the AWS account"
-  type        = string
-  default     = "~/.aws/credentials"
-}
-
 variable "lambda_func_name" {
   description = "Name of our lambda function"
   type        = string
@@ -20,4 +14,15 @@ variable "lambda_project_path" {
   description = "Relative path to the Lambda project"
   type        = string
   default     = "../src/MyFirstLambda/src/MyFirstLambda"
+}
+
+variable "is_windows" {
+  description = "Set to true if running Terraform on Windows"
+  type        = bool
+  default     = false
+}
+
+variable "region" {
+  type    = string
+  default = "eu-west-2"
 }

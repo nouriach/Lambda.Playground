@@ -14,8 +14,9 @@ public class Function
     /// <param name="input">The event for the Lambda function handler to process.</param>
     /// <param name="context">The ILambdaContext that provides methods for logging and describing the Lambda environment.</param>
     /// <returns></returns>
-    public string FunctionHandler(string input, ILambdaContext context)
+    public string FunctionHandler(ILambdaContext context)
     {
-        return input.ToUpper();
+        Console.WriteLine("---> Inside Function Handler");
+        return "Hello from FunctionHandler";
     }
 }

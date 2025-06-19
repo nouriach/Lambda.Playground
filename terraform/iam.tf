@@ -22,7 +22,7 @@ data "aws_iam_policy_document" "allow_logging" {
       "logs:CreateLogStream",
       "logs:PutLogEvents",
     ]
-    resources = ["arn:aws:logs:*:*:*"] <--- update
+    resources = ["arn:aws:logs:*:*:*"]
   }
 }
 
