@@ -26,3 +26,9 @@ variable "region" {
   type    = string
   default = "eu-west-2"
 }
+
+variable "lambda_handler" {
+  description = "The full path for the Lambda handler function"
+  type        = string
+  default     = "MyFirstLambda::MyFirstLambda.Function::FunctionHandler"
+}

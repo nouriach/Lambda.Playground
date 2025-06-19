@@ -1,5 +1,3 @@
-# Build the Policy Documents: what can these policies/roles do?
-
 data "aws_iam_policy_document" "lambda_assume_role_policy" {
   statement {
     effect = "Allow"
